@@ -117,6 +117,7 @@ public class Solution {
 	public static int playMemory(int n) {
 		int cards[] = new int[2*n];
 		boolean collectedCards[] = new boolean[2*n];
+		Scanner Clavier = new Scanner(System.in);
 		//initier 1
 		cards =initCards(n);
 		
@@ -130,6 +131,12 @@ public class Solution {
 		//display 3/1
 		MemoryUtil.displayCards(cards,collectedCards);
 		
+		System.out.println("Entrer la premiere valeur");
+		int pos1=Clavier.nextInt();
+		
+
+		System.out.println("Entrer la dexuième valeur");
+		int pos2=Clavier.nextInt();
 		
 	}
 
